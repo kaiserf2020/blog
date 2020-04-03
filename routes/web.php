@@ -26,3 +26,8 @@ Route::get('user/index','UserController@index');
 Route::get('user/edit/{id}','UserController@edit');
 //确认修改路由
 Route::post('user/update','UserController@update');
+//用户删除路由
+Route::get('user/del/{id}','UserController@destroy');
+
+//后台登录路由
+Route::get('admin/login','Admin\LoginController@login');

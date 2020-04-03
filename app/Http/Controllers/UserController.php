@@ -43,7 +43,7 @@ class UserController extends Controller
     public function index(){
         //获取用户数据
         $user = User::get();
-        return view('user.list')->with('user',$user);
+        return view('user.list',compact('user'));
     }
 
     //修改页面
@@ -71,5 +71,23 @@ class UserController extends Controller
         }else{
             return back();
         }
+    }
+
+    //删除用户
+    public function destroy($id){
+        $user = User::find($id);
+        $res = $user->delete();
+        if($res){
+            $data = [
+                'status'=>0,
+                'message'=>'删除成功'
+            ];
+        }else{
+            $data = [
+                'status'=>1,
+                'message'=>'删除失败'
+            ];
+        }
+        return $data;
     }
 }

@@ -21,12 +21,25 @@
 
     <div class="login layui-anim layui-anim-up">
         <div class="message">后台管理系统</div>
+        @if(count($errors)>0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div id="darkbannerwrap"></div>
 
-        <form method="post" class="layui-form" >
+        <form method="post" class="layui-form"  action="{{ url('admin/doLogin') }}">
+            {{ csrf_field() }}
             <input name="username" placeholder="用户名"  type="text" lay-verify="required" class="layui-input" >
             <hr class="hr15">
             <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
+            <hr class="hr15">
+            <input name="code" style="width: 150px;float: left;" lay-verify="required" placeholder="验证码"  type="text" class="layui-input">
+            <img src="{{ url('admin/code') }}" alt="" style="float: right;" onclick="this.src='{{ url('admin/code') }}?'+Math.random()">
             <hr class="hr15">
             <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
             <hr class="hr20" >
@@ -40,14 +53,6 @@
               // layer.msg('玩命卖萌中', function(){
               //   //关闭后的操作
               //   });
-              //监听提交
-              form.on('submit(login)', function(data){
-                // alert(888)
-                layer.msg(JSON.stringify(data.field),function(){
-                    location.href='index.html'
-                });
-                return false;
-              });
             });
         })
     </script>

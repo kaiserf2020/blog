@@ -31,3 +31,9 @@ Route::get('user/del/{id}','UserController@destroy');
 
 //后台登录路由
 Route::get('admin/login','Admin\LoginController@login');
+
+//验证码路由
+Route::get('admin/code','Admin\LoginController@code');
+
+//表单验证路由
+Route::post('admin/doLogin','Admin\LoginController@doLogin');

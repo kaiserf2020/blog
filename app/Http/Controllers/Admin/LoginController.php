@@ -36,4 +36,15 @@ class LoginController extends Controller
         }
 
     }
+    //3.验证是否由此用户（用户名 密码 验证码）
+
+
+
+
+    //4.保存用户信息到session中
+
+
+
+
+    //5.跳转到后台首页
 }

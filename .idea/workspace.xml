@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f7e2ad-d178-4488-ad2d-b66ac1cc0e8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Org/code/Code.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Org/code/consola.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1d7c2c1-94f5-4de5-a3bf-a5375308c677.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1d7c2c1-94f5-4de5-a3bf-a5375308c677/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +47,14 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookstore: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="boke: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="my_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="boke: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="boke: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -159,7 +161,7 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="G:/laravel/博客系统案例/视频代码/项目源码/blog" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/boke.sql" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -214,6 +216,9 @@
       <workItem from="1585960620215" duration="633000" />
       <workItem from="1585996674845" duration="1799000" />
       <workItem from="1586047039087" duration="1198000" />
+      <workItem from="1586082860907" duration="609000" />
+      <workItem from="1586134338903" duration="5237000" />
+      <workItem from="1586218072430" duration="3534000" />
     </task>
     <servers />
   </component>

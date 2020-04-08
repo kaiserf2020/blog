@@ -37,3 +37,6 @@ Route::get('admin/code','Admin\LoginController@code');
 
 //表单验证路由
 Route::post('admin/doLogin','Admin\LoginController@doLogin');
+
+//加密算法
+Route::get('admin/jiami','Admin\LoginController@jiami');
